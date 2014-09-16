@@ -1,0 +1,31 @@
+h1, h2, h3 {
+	font-family: Georgia, serif
+	color: plum;
+	background-color: palegoldenrod;
+}
+
+p {
+	font-family: "Palatino Linotype", Palatina, serif
+}
+
+
+p#abc123 {
+	font-size: 24pt;
+	color: red;
+}
+
+p#abc456 {
+	font-size: 18pt;
+	color: purple;
+}
+
+p#abc789 {
+	font-size: 12pt;
+	color: teal;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+
