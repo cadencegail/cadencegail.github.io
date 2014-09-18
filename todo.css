@@ -1,7 +1,6 @@
 h1, h2, h3 {
 	font-family: Georgia, serif
-	color: plum;
-	background-color: palegoldenrod;
+	background-color: plum;
 }
 
 p {
@@ -11,17 +10,17 @@ p {
 
 p#abc123 {
 	font-size: 24pt;
-	color: red;
+	color: indigo;
 }
 
 p#abc456 {
 	font-size: 18pt;
-	color: purple;
+	color: mediumaquamarine;
 }
 
 p#abc789 {
 	font-size: 12pt;
-	color: teal;
+	color: gold;
 }
 
 .done {
