@@ -1,50 +1,56 @@
 <html>
 <link rel="stylesheet" href="todo.css">
 
+<script type = "text/javascript" src="todo.js"></script>
+
 <body>
-<h1>Cadence's To-do List</h1>
 
-<ol>
-<li class = "done"> <p id="abc123">
-<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMoZijdI
-mXxenedFI4W__kWFVrCbDd_AUiiZH6Se0i47Fbe6INiBAFX8Hi" height = 20> </img><class done>Make to-do list </p></li>
+<h1 align="center">Todo List</h1>
 
-<li class = "done"><p id="abc123">
-<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMoZijdI
-mXxenedFI4W__kWFVrCbDd_AUiiZH6Se0i47Fbe6INiBAFX8Hi" height = 20> </img>Get on LinkedIn and Career Connecion</p></li>
+<section id='s'>
 
-<li><p id="abc456">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejppvlc
-GOV5b3MglXAGjoiU75h0fxcrgiDqQGH2kMj1G61LPKzZAhBHwy" height = 20> </img>Practice piano</p></li>
+	<ul id='busy'>
+		<li id='a' style="display: inline; position:relative; left: 0%;" >Academics</li>
+		<li id='e' style="display: inline; position:relative; left: 20%;">Extra Curriculars</li>
+		<li id='f' style="display: inline; position:relative; left: 40%;">FOR FUN</li>
+	</ul>
+	
+</section>
 
-<li><p id="abc123">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejppvlc
-GOV5b3MglXAGjoiU75h0fxcrgiDqQGH2kMj1G61LPKzZAhBHwy" height = 20> </img>Research grad schools</p></li>
+<label for = "taskname" align="center" style="position:relative; top:10px; left: 30%;"> New Task:</label>
+<input type = "text" id="taskname" style="position:relative; top:10px; left: 30%;"></input><br>
+<label for = "duedate" align="center" style="position:relative; top:20px; left: 30%;"> Due Date:</label>
+<input type = "date" id="duedate" style="position:relative; top: 20px; left: 30%;"></input><br>
 
-<li><p id="abc789">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejppvlc
-GOV5b3MglXAGjoiU75h0fxcrgiDqQGH2kMj1G61LPKzZAhBHwy" height = 20> </img>Buy a hammock</p></li>
+<label for = "priority" align="center" style="position:relative; top:30px; left: 30%;"> Priority:</label>
 
-<li><p id="abc456">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejppvlc
-GOV5b3MglXAGjoiU75h0fxcrgiDqQGH2kMj1G61LPKzZAhBHwy" height = 20> </img>Get parking permit</p></li>
+<form id="priority" style="position:relative; top:12px; left: 40%;">
+<select id="pSelect">
+  <option value="High">High</option>
+  <option value="Medium">Medium</option>
+  <option value="Low">Low</option>
+</select>
+</form>
+</input>
 
-<li><p id="abc789">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejppvlc
-GOV5b3MglXAGjoiU75h0fxcrgiDqQGH2kMj1G61LPKzZAhBHwy" height = 20> </img>Hike the Appalachian trail</p></li>
+<label for = "project" align="center" style="position:relative; top:20px; left: 30%;"> Project:</label>
 
-<li class = "done"><p id="abc123">
-<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMoZijdI
-mXxenedFI4W__kWFVrCbDd_AUiiZH6Se0i47Fbe6INiBAFX8Hi" height = 20> </img>Take a nap</p></li>
+<form id="project" style="position:relative; left:40%;">
+<select id="proj">
+  <option value="Academics">Academics</option>
+  <option value="Extra Curriculars">Extra Curriculars</option>
+  <option value="FOR FUN">FOR FUN</option>
+</select>
+</form>
+</input>
 
-<li><p id="abc789">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejppvlc
-GOV5b3MglXAGjoiU75h0fxcrgiDqQGH2kMj1G61LPKzZAhBHwy" height = 20> </img>Clean my room</p></li>
+<br>
 
-<li class = "done"><p id="abc456">
-<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMoZijdI
-mXxenedFI4W__kWFVrCbDd_AUiiZH6Se0i47Fbe6INiBAFX8Hi" height = 20> </img>Finish homework</p></li>
+<button onclick="addTask(null);" style="position:relative; top:-80px; left: 60%;">Add</button>
 
+<script>
+	window.onload = onLoad;
+</script>
 
 </body>
 

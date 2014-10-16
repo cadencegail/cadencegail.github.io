@@ -3,8 +3,24 @@ h1, h2, h3 {
 	background-color: plum;
 }
 
+section#s {
+	margin-right: auto;
+	margin-left: auto;
+	width: 60%;
+	height: 70%;
+	background-color: #dddddd;
+	padding: 1%;
+	border: 2px solid black;		
+}
+
+
+
 p {
 	font-family: "Palatino Linotype", Palatina, serif
+}
+
+ul {
+	list-style: none;	
 }
 
 
@@ -25,6 +41,10 @@ p#abc789 {
 
 .done {
 	text-decoration: line-through;
+}
+
+.undone {
+	text-decoration: bold;
 }
 
 
