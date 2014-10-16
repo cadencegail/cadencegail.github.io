@@ -5,48 +5,51 @@
 
 <body>
 
-<h1 align="center">Todo List</h1>
+
 
 <section id='s'>
+	<h2 align="center">My Todo List</h2>
 
 	<ul id='busy'>
-		<li id='a' style="display: inline; position:relative; left: 0%;" >Academics</li>
-		<li id='e' style="display: inline; position:relative; left: 20%;">Extra Curriculars</li>
-		<li id='f' style="display: inline; position:relative; left: 40%;">FOR FUN</li>
+		<li id='a' class='parent' style="display: inline; text-align: center; float: left; width: 30%;" >Academics</li>
+		<li id='e' class='parent' style="display: inline; text-align: center; float: left; width: 30%;">Extra Curriculars</li>
+		<li id='f' class='parent' style="display: inline; text-align: center; float: left; width: 30%;">FOR FUN</li>
 	</ul>
-	
 </section>
 
-<label for = "taskname" align="center" style="position:relative; top:10px; left: 30%;"> New Task:</label>
-<input type = "text" id="taskname" style="position:relative; top:10px; left: 30%;"></input><br>
-<label for = "duedate" align="center" style="position:relative; top:20px; left: 30%;"> Due Date:</label>
-<input type = "date" id="duedate" style="position:relative; top: 20px; left: 30%;"></input><br>
-
-<label for = "priority" align="center" style="position:relative; top:30px; left: 30%;"> Priority:</label>
-
-<form id="priority" style="position:relative; top:12px; left: 40%;">
-<select id="pSelect">
-  <option value="High">High</option>
-  <option value="Medium">Medium</option>
-  <option value="Low">Low</option>
-</select>
-</form>
-</input>
-
-<label for = "project" align="center" style="position:relative; top:20px; left: 30%;"> Project:</label>
-
-<form id="project" style="position:relative; left:40%;">
-<select id="proj">
-  <option value="Academics">Academics</option>
-  <option value="Extra Curriculars">Extra Curriculars</option>
-  <option value="FOR FUN">FOR FUN</option>
-</select>
-</form>
-</input>
-
 <br>
+<section id='ss'>
+	<label for = "taskname" align="center"> New Task:</label>
+	<input type = "text" id="taskname"></input>
+	<br><br>
+	<label for = "duedate" align="center"> Due Date:</label>
+	<input type = "date" id="duedate"></input>
+	<br><br>
+	
+	<label for = "priority" align="center" > Priority:</label>
+	<form id="priority" style="display: inline;">
+	<select id="pSelect">
+  		<option value="High">High</option>
+  		<option value="Medium">Medium</option>
+  		<option value="Low">Low</option>
+	</select>
+	</form>
+	</input>
+	<br><br>
+	
+	<label for = "project" align="center"> Project:</label>
 
-<button onclick="addTask(null);" style="position:relative; top:-80px; left: 60%;">Add</button>
+	<form id="project" style="display: inline">
+	<select id="proj">
+  		<option value="Academics">Academics</option>
+  		<option value="Extra Curriculars">Extra Curriculars</option>
+  		<option value="FOR FUN">FOR FUN</option>
+	</select>
+	</form>
+	</input>
+	
+	<button onclick="addTask(null);" style="float: right; top: 10%; width: 10%;">Add</button>
+</section>
 
 <script>
 	window.onload = onLoad;

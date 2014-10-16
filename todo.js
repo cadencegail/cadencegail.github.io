@@ -11,6 +11,7 @@ addTask = function(newTask) {
 	myList = document.getElementById('busy');
 	
 	newListItem = document.createElement('li');
+	
 	newcb = document.createElement('input');
 	newcb.type = 'checkbox';
 	newListItem.appendChild(newcb);
@@ -40,7 +41,8 @@ addTask = function(newTask) {
 	if (newTask == null) {
 	
 		newListList = document.createElement('ul')
-			
+		newListList.className = "child";
+		
 		newDue = document.createTextNode(" Due: ");
 		newDueText = document.createTextNode(due.value);
 		newListDueItem = document.createElement('li')
@@ -72,7 +74,8 @@ addTask = function(newTask) {
 	else {
 	
 		newListList = document.createElement('ul');
-			
+		newListList.className = "child";
+		
 		newDueText = document.createTextNode(dueDate);
 		newListDueItem = document.createElement('li');
 		newListDueItem.appendChild(newDueText);
