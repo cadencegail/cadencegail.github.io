@@ -70,3 +70,12 @@ section {
 	margin-bottom: 10px;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.info_content {
+	font-family: 'Syncopate' , sans-serif;
+}
+
