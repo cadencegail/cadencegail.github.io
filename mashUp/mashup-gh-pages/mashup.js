@@ -23,11 +23,11 @@ function statusChangeCallback(response) {
             if (response && !response.error) {
 
               var waldo = {
-              	lat: Math.random() * 170 - 85;
-              	lng: Math.random() * 360 - 180;
-              	friendname: "Waldo"
-              	friendid:"whereswaldo"
-              	placename:"Waldo's place"
+              	lat: Math.random() * 170 - 85,
+              	lng: Math.random() * 360 - 180,
+              	friendname: "Waldo",
+              	friendid:"whereswaldo",
+              	placename:"Waldo's place",
               	message: "You found me!"
               }
               
