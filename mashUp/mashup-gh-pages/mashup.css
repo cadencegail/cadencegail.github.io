@@ -1,9 +1,9 @@
 html, body, #map-canvas {
-	height:100%;
+	height:95%;
 	margin-left:20px;
 	margin-right:20px;
 	padding:0;
-	background-color: #dd77aa;
+	background-color: #ddbb99;
 }
 img {
 	display:inline;
