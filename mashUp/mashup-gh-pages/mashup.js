@@ -1,9 +1,7 @@
 //FACEBOOK
 
+FB.Event.subscribe('auth,logout', logout_event)
 
-window.onload = function() {
-	FB.Event.subscribe('auth,logout', logout_event)
-}
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
   console.log('statusChangeCallback');
