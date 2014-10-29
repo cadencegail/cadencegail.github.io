@@ -100,10 +100,12 @@ window.fbAsyncInit = function() {
     console.log(response);
     statusChangeCallback(response);
   });
+  
+  FB.Event.subscribe('auth,logout', logout_event);
 
 };
 
-FB.Event.subscribe('auth,logout', logout_event);
+
 
 // Load the SDK asynchronously
 (function(d, s, id) {
