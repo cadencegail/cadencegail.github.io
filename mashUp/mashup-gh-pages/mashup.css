@@ -5,6 +5,7 @@ html, body {
 img {
 	display:inline;
 	padding:5px;
+	text-align: center;
 }
 
 h1 {
@@ -76,6 +77,8 @@ a {
 }
 
 .info_content {
-	font-family: 'Syncopate' , sans-serif;
+	font-family: sans-serif;
+	text-align: left;
+	
 }
 
