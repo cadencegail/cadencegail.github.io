@@ -11,6 +11,13 @@ img {
 	padding:5px;
 }
 
+h1 {
+	font-family: 'Orbitron' , sans-serif;
+}
+
+h4 {
+	font-family: 'Lobster Two' , cursive;
+}
 h3 {
 	display:inline;
 }
@@ -34,6 +41,7 @@ img {
 }
 
 #status {
+	font-family: 'Syncopate' , sans-serif;
 	text-align: center;
 }
 
