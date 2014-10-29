@@ -19,13 +19,14 @@ p {
 }
 
 p#box {
-	width: 300px;
-	height: 100px;
-	padding: 20px;
-	border: 10px solid navy;
 	text-align: center;
+	background-color: 	
 }
 
 img {
 	
+}
+
+#map-canvas {
+	border: 5px solid plum;
 }
