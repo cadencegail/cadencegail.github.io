@@ -101,7 +101,7 @@ window.fbAsyncInit = function() {
     statusChangeCallback(response);
   });
   
-  FB.Event.subscribe('auth,logout', logout_event);
+  FB.Event.subscribe('auth.logout', logout_event);
 
 };
 
