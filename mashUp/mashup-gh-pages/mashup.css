@@ -1,8 +1,4 @@
-html, body, #map-canvas {
-	height:95%;
-	margin-left:20px;
-	margin-right:20px;
-	padding:0;
+html, body {
 	background-color: #45bb99;
 	text-align: center;
 }
@@ -42,23 +38,26 @@ header {
 	position:fixed;
 	top:0px;
 	left:0px;
-	height:200px;
+	height:20%;
 	width:100%;
 	background-color:#b2317f;
 	border-bottom: 1px solid;
 	padding: 10px;
+	overflow: scroll;
 }
 
 section {
-	height: 100%;
+	height: 80%;
 	position: fixed;
-	top: 220px;
-	width: 97%;
+	top: 25%;
+	width: 96.5%;
 	padding: 20px;
 	left: 0px;
+	overflow: scroll;
 }
 
 #map-canvas {
+	height: 75%;
 	border: 4px solid black;
 	border-radius: 20px;
 	margin: 0px;
