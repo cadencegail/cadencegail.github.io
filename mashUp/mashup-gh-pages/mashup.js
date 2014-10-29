@@ -1,5 +1,9 @@
 //FACEBOOK
 
+
+window.onload = function() {
+	FB.Event.subscribe('auth,logout', logout_event)
+}
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
   console.log('statusChangeCallback');
@@ -121,7 +125,13 @@ function testAPI() {
   });
 }
 
-
+var logout_event = function() {
+	var myMap = getElementById("map-canvas");
+	var myBody = getElementById("body");
+	myBody.removeChild(myMap);
+	myBody.innerHTML += "<div id='map-canvas'></div>";
+	initialze();
+}
 // GOOGLE MAPS
 
 function initialize() {
