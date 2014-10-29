@@ -57,12 +57,12 @@ function statusChangeCallback(response) {
   } else if (response.status === 'not_authorized') {
     // The person is logged into Facebook, but not your app.
     document.getElementById('status').innerHTML = 'Log in ' +
-      'so that you can creep on your friends.';
+      'to find your friends!';
   } else {
     // The person is not logged into Facebook, so we're not sure if
     // they are logged into this app or not.
     document.getElementById('status').innerHTML = 'Log in ' +
-      'so that you can creep on your friends.';
+      'to find your friends!';
   }
 }
 
@@ -124,7 +124,7 @@ function testAPI() {
   FB.api('/me', function(response) {
     console.log('Successful login for: ' + response.name);
     document.getElementById('status').innerHTML =
-      'Wow, you\'re really creepy, ' + response.name + '!';
+      'Where\'s Waldo?';
   });
 }
 
