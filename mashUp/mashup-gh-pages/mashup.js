@@ -128,7 +128,8 @@ function testAPI() {
   });
 }
 
-var logout_event = function() {
+var logout_event = function(response) {
+	console.log("WE ARE HERE");
 	var myMap = getElementById("map-canvas");
 	var myBody = getElementById("body");
 	myBody.removeChild(myMap);
