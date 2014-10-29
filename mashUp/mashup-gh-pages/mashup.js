@@ -130,8 +130,8 @@ function testAPI() {
 
 var logout_event = function(response) {
 	console.log("WE ARE HERE");
-	var myMap = getElementById("map-canvas");
-	var myBody = getElementById("body");
+	var myMap = document.getElementById("map-canvas");
+	var myBody = document.getElementById("body");
 	myBody.removeChild(myMap);
 	myBody.innerHTML += "<div id='map-canvas'></div>";
 	initialze();
