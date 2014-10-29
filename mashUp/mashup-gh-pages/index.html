@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Found youuuuuu....</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCLBi6GIBHDzOS2WMhYsiwSYxyHNRkk4o">
+  </script>
+  <link rel="stylesheet" type="text/css" href="mashup.css">
+  </head>
+  <body id='body'>
+  <script src = "mashup.js"></script>
+
+  <!--
+    Below we include the Login Button social plugin. This button uses
+    the JavaScript SDK to present a graphical Login button that triggers
+    the FB.login() function when clicked.
+  -->
+  <div id="fb-root"></div>
+  <fb:login-button autologoutlink="true" scope="read_stream,public_profile,email" onlogin="checkLoginState();">
+  </fb:login-button>
+
+  <div id="status"></div>
+  <div id="map-canvas"></div>
+  </body>
+</html>
