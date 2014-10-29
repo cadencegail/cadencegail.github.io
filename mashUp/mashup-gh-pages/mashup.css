@@ -38,10 +38,6 @@ p#box {
 	background-color: 	
 }
 
-img {
-	
-}
-
 header {
 	position:fixed;
 	top:0px;
@@ -54,10 +50,9 @@ header {
 }
 
 section {
-	
 	height: 100%;
 	position: fixed;
-	top: 200px;
+	top: 220px;
 	width: 100%;
 	padding: 20px;
 	left: 0px;
