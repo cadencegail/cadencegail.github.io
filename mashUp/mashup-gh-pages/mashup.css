@@ -43,7 +43,6 @@ header {
 	background-color:#b2317f;
 	border-bottom: 1px solid;
 	padding: 10px;
-	overflow: scroll;
 }
 
 section {
@@ -53,7 +52,6 @@ section {
 	width: 96.5%;
 	padding: 20px;
 	left: 0px;
-	overflow: scroll;
 }
 
 #map-canvas {
