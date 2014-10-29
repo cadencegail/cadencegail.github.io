@@ -134,7 +134,7 @@ var logout_event = function(response) {
 	var myBody = document.getElementById("body");
 	myBody.removeChild(myMap);
 	myBody.innerHTML += "<div id='map-canvas'></div>";
-	initialze();
+	initialize();
 }
 // GOOGLE MAPS
 
