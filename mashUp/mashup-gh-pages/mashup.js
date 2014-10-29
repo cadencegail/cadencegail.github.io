@@ -103,6 +103,8 @@ window.fbAsyncInit = function() {
 
 };
 
+FB.Event.subscribe('auth,logout', logout_event);
+
 // Load the SDK asynchronously
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -115,7 +117,7 @@ window.fbAsyncInit = function() {
 // Here we run a very simple test of the Graph API after login is
 // successful.  See statusChangeCallback() for when this call is made.
 function testAPI() {
-  FB.Event.subscribe('auth,logout', logout_event);
+  
   console.log('Welcome!  Fetching your information.... ');
   FB.api('/me', function(response) {
     console.log('Successful login for: ' + response.name);
