@@ -22,7 +22,16 @@ function statusChangeCallback(response) {
             console.log(response);
             if (response && !response.error) {
 
-              var markers = []
+              var waldo = {
+              	lat: Math.random() * 170 - 85;
+              	lng: Math.random() * 360 - 180;
+              	friendname: "Waldo"
+              	friendid:"whereswaldo"
+              	placename:"Waldo's place"
+              	message: "You found me!"
+              }
+              
+              markers = [waldo];
 
               for (var i in response['data']) {
 
