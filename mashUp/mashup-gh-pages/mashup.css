@@ -1,6 +1,7 @@
 html, body {
-	background-color: #6b6b6b;
-	
+	/*background-color: #6b6b6b;*/
+	background:
+	linear-gradient(red 50%, white 50%);
 	text-align: center;
 }
 img {
@@ -42,15 +43,12 @@ header {
 	left:0px;
 	height:20%;
 	width:100%;
-	background-color: 66ccff;
-	/*background-color:#5CB8E6;
-	background-color:#b2317f;*/
+	background-color:#66ccff;
 	border-bottom: 1px solid;
 	padding: 10px;
 }
 
 section {
-	background: linear-gradient(red 50%, white 50%);
 	height: 80%;
 	position: fixed;
 	top: 25%;
